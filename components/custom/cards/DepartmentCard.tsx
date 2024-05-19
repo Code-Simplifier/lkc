@@ -10,9 +10,10 @@ import { cn } from "@/lib/utils";
 interface CardProps {
   title: string;
   icon: any;
+  children?: React.ReactNode;
 }
 
-const Card = ({ title, icon }: CardProps) => {
+const Card = ({ title, icon, children }: CardProps) => {
   return (
     <div className="dp__container">
       <div className="dpc__container">
@@ -24,6 +25,7 @@ const Card = ({ title, icon }: CardProps) => {
             <h2 className={cn(secondary.className, "traking-tight uppercase")}>
               {title}
             </h2>
+            <p>{children}</p>
             <Link href={"#"}>
               <ChevronRight />
             </Link>

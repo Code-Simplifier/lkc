@@ -32,7 +32,7 @@ const Departments = () => {
         <div
           className={cn(
             secondary.className,
-            "flex text-lg justify-center items-center gap-x-2 uppercase"
+            "flex text-lg justify-center items-center gap-x-2 hover:gap-x-4 transition-all duration-150 uppercase"
           )}
         >
           <p>explore all</p>

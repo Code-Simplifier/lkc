@@ -8,18 +8,18 @@ import {
   School,
 } from "lucide-react";
 
+
 export const navLinks = [
   {
     id: 0,
-    title: "about us",
+    title: "about",
     icon: Info,
     sublinks: [
       "overview",
       "management",
-      "administration",
       "vision",
       "core values",
-      "infrastructure",
+      "code of conduct"
     ],
   },
   {
@@ -28,7 +28,7 @@ export const navLinks = [
     icon: GraduationCap,
     sublinks: [
       "programmes",
-      "ciricullum",
+      "curriculum",
       "council",
       "results",
       "examination",
@@ -45,7 +45,7 @@ export const navLinks = [
       "eligibility",
       "prospects",
       "fee structure",
-      "helpline",
+      "how to apply",
     ],
   },
   {
@@ -101,3 +101,5 @@ export const navLinks = [
     ],
   },
 ];
+
+

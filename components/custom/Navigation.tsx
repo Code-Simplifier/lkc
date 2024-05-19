@@ -21,11 +21,14 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <div className="fixed flex w-full justify-between px-4 py-2 backdrop-blur-sm">
-      <Image src={Logo} alt="Logo" width={100} />
+    <div className="fixed flex w-screen justify-between px-4 py-2 backdrop-blur-md border-b border-main">
+      <Link href={"/"}>
+        <Image src={Logo} alt="Logo" width={100} />
+      </Link>
       <Sheet>
         <SheetTrigger>
           <Menu size={30} />
@@ -42,9 +45,14 @@ const Navigation = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     {navlink.sublinks.map((sublink) => (
-                      <DropdownMenuItem className="uppercase m-1" key={sublink}>
-                        {sublink}
-                      </DropdownMenuItem>
+                      <Link href={`/${navlink.title.replaceAll(" ", "-")}/${sublink.replaceAll(" ", "-")}`}>
+                        <DropdownMenuItem
+                          className="uppercase m-1"
+                          key={sublink}
+                        >
+                          {sublink}
+                        </DropdownMenuItem>
+                      </Link>
                     ))}
                   </DropdownMenuContent>
                 </DropdownMenu>

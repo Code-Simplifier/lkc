@@ -13,7 +13,7 @@ import { UserRoundPlus } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 h-screen w-full justify-between items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center place-content-center h-screen w-full justify-between items-center">
         <div
           className={cn(
             bold_primary.className,
