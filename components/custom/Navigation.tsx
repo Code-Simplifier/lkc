@@ -45,7 +45,7 @@ const Navigation = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     {navlink.sublinks.map((sublink) => (
-                      <Link href={`/${navlink.title.replaceAll(" ", "-")}/${sublink.replaceAll(" ", "-")}`}>
+                      <Link key={sublink} href={`/${navlink.title.replaceAll(" ", "-")}/${sublink.replaceAll(" ", "-")}`}>
                         <DropdownMenuItem
                           className="uppercase m-1"
                           key={sublink}
