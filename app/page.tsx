@@ -24,7 +24,7 @@ export default function Home() {
   );
 }
 
-export const images = [
+const images = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
