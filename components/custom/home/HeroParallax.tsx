@@ -106,11 +106,16 @@ const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className={cn(bold_primary.className, "text-2xl md:text-7xl font-bold dark:text-white")}>
+      <h1
+        className={cn(
+          bold_primary.className,
+          "text-2xl md:text-7xl font-bold dark:text-white"
+        )}
+      >
         Embracing Excellence: <br /> Latest Triumphs
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        Explore our college's rich tapestry of{" "}
+        Explore our college&apos;s rich tapestry of{" "}
         <span className="bg-side p-1 rounded-md"> academic achievements</span>{" "}
         and vibrant youth{" "}
         <span className="bg-main p-1 rounded-md"> festival victories.</span>{" "}
